@@ -224,6 +224,11 @@ export default class Presentation extends React.Component {
               </a>
             </ListItem>
             <ListItem>
+              <a href="https://github.com/lennerd/spectacle">
+                https://github.com/lennerd/spectacle - Fix for Spectacle ComponentPlayground
+              </a>
+            </ListItem>
+            <ListItem>
               <a href="https://dev.to/hemanth/explain-redux-like-im-five">
                 https://dev.to/hemanth/explain-redux-like-im-five
               </a>
