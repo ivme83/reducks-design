@@ -1,68 +1,64 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+[![Maintenance Status][maintenance-image]](#maintenance-status)
 
-## Available Scripts
+# Spectacle Boilerplate
 
-In the project directory, you can run:
+## Contents
 
-### `npm start`
+- [Reference](#reference)
+- [Getting Started](#getting-started)
+- [Tutorial](#tutorial)
+- [Build & Deployment](#build-deployment)
 
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Reference
 
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
+The Spectacle core API is available in the [Spectacle Docs](https://github.com/FormidableLabs/spectacle/blob/master/README.md).
 
-### `npm test`
+## Getting Started
 
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+1. Download the boilerplate
 
-### `npm run build`
+   ```sh
+   git clone git@github.com:FormidableLabs/spectacle-boilerplate.git
+   ```
 
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
+2. Remove existing version control
 
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
+   ```sh
+   rm -R .git
+   ```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+3. Install dependencies
 
-### `npm run eject`
+   ```sh
+   yarn install
+   ```
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+4. Start the webpack server. The server will run at [`localhost:3000`](http://localhost:3000).
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+   ```sh
+   yarn start
+   ```
 
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+## Tutorial
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+If want you a step-by-step guide for getting started with Spectacle, a basic tutorial is available [here](https://github.com/FormidableLabs/spectacle/blob/master/docs/tutorial.md).
 
-## Learn More
+## Build & Deployment
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Building the dist version of the project is as easy as running
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+```sh
+yarn build
+```
 
-### Code Splitting
+If you want to deploy the slideshow to surge, run
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
+```sh
+yarn deploy
+```
 
-### Analyzing the Bundle Size
+## Maintenance Status
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
+**Active:** Formidable is actively working on this project, and we expect to continue for work for the foreseeable future. Bug reports, feature requests and pull requests are welcome. 
 
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+[maintenance-image]: https://img.shields.io/badge/maintenance-active-green.svg
