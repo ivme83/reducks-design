@@ -2,6 +2,8 @@
 import React from 'react';
 import { Provider, connect } from 'react-redux';
 import { createStore } from 'redux';
+// import 'prismjs';
+// import 'prismjs/components/prism-javascript';
 
 // Import Spectacle Core tags
 import {
@@ -17,40 +19,34 @@ import {
   Slide,
   Text,
   CodePane,
-  ComponentPlayground,
+  ComponentPlayground
 } from 'spectacle';
 
 import CodeSlide from 'spectacle-code-slide';
+import { reduxone } from '../assets/redux.lesson.one';
 
 // Import theme
 import createTheme from 'spectacle/lib/themes/default';
 
-const images = {
-  formidagon: require('../assets/formidable-logo.svg'),
-  goodWork: require('../assets/good-work.gif'),
-};
-
 // Require CSS
-require('normalize.css');
 import './index.css';
+require('normalize.css');
 
 const theme = createTheme(
   {
     primary: '#292929',
     secondary: '#E1E1E1',
     tertiary: '#03A9FC',
-    quaternary: '#CECECE',
+    quaternary: '#CECECE'
   },
   {
     primary: 'Montserrat',
-    secondary: 'Helvetica',
+    secondary: 'Helvetica'
   }
 );
 
-import { reduxone } from '../assets/redux.lesson.one';
-
-const lesson_code = {
-  reduxone,
+const lessonCode = {
+  reduxone
 };
 
 export default class Presentation extends React.Component {
@@ -63,15 +59,16 @@ export default class Presentation extends React.Component {
       >
         <Slide transition={['zoom']}>
           <Heading size={1} fit caps lineHeight={1} textColor="secondary">
-            Spectacle Boilerplate
+            Redux Explainer
           </Heading>
           <Text margin="10px 0 0" textColor="tertiary" fit bold>
-            open the presentation/index.js file to get started
+            Simple Redux explainer with Reducks
           </Text>
         </Slide>
         <CodeSlide
           transition={[]}
-          lang="js"
+          lang="javascript"
+          className="redux-code-slide"
           textSize={20}
           code={require('raw-loader!../assets/redux.example')}
           ranges={[
@@ -85,15 +82,10 @@ export default class Presentation extends React.Component {
             // ...
           ]}
         />
-        {/* <CodePane
-          lang="js"
-          source={require('raw-loader!../assets/redux.example')}
-          // theme="light"
-        /> */}
         <Slide>
           <ComponentPlayground
             theme="dark"
-            code={lesson_code.reduxone}
+            code={lessonCode.reduxone}
             scope={{
               Provider,
               connect,
