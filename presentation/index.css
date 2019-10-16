@@ -15,6 +15,12 @@
    font-size: 16px !important;
  }
 
+  .react-live-preview button {
+    cursor: pointer;
+    margin-left: 4px;
+    margin-right: 4px;
+  }
+
  code[class*="language-"],
  pre[class*="language-"] {
    color: #f8f8f2;

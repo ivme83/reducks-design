@@ -36,6 +36,7 @@ const styles = {
 const ReduxLessonOne = ({ color, dirty, remainingBites }) => (
   <div>
     <ul style={styles}>
+      <li>Current State</li>
       <li>{'{'}</li>
       <li>
         <ul style={styles}>
